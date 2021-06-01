@@ -1,0 +1,12 @@
+I"�<h2 id="installation">Installation</h2>
+
+<p>Pour cette formation, vous ne serez pas contraint d’intaller Python directement sur votre oridnateur car avec <strong><a href="https://colab.research.google.com/notebooks/welcome.ipynb">Google Colab</a></strong>, vous pouvez exécuter les lignes de code dans le <em>cloud</em>. Pour ceux qui voudront travailler hors-connection, une installation est cependant nécessaire. Pour installer Python localement, la distribution Anaconda est recommandée, ainsi que l’environnement Jupyter Lab : https://www.anaconda.com/distribution/.</p>
+
+<h3 id="os-x">OS X</h3>
+
+<p>Il existe de nombreuses façons d’installer Python, une des meilleures est d’utiliser le package Anaconda.</p>
+
+<p><strong>Nous vous conseillons d’installer la distribution Anaconda</strong>. Elle contient tous les modules et packages nécessaires pour ce cours. Elle est disponible pour toutes les plateformes et possède une procédure d’installation assez simple. Vous pouvez la télécharger depuis http://continuum.io/downloads.  Des détails pour l’installation peuvent être trouvés ici : http://docs.continuum.io/anaconda/install.html</p>
+
+<p><a href="./">Retour</a></p>
+:ET

@@ -1,0 +1,91 @@
+I"�<h1 id="configuration-du-cours">Configuration du cours</h1>
+
+<p>Bienvenue dans la programmation Python pratique! Cette page contient des informations importantes
+à propos de la configuration des cours et de la logistique.
+Cette page vous donne l’essentiel afin de vous familiariser avec <a href="https://research.google.com/colaboratory/faq.html?hl=fr">Colaboratory</a>. Elle peut être omise en première lecture.</p>
+
+<h2 id="durée-du-cours-et-exigences-en-matière-de-temps">Durée du cours et exigences en matière de temps</h2>
+
+<p>Ce cours était à l’origine donné en personne avec un instructeur
+formation qui a duré 3 à 4 jours. Pour terminer le cours dans son
+dans son intégralité, vous devez prévoir au minimum 25 à 35 heures de travail.
+La plupart des participants trouvent le matériel assez difficile sans
+jetant un œil au code de la solution (voir ci-dessous).</p>
+
+<h2 id="configuration-et-installation-de-python-pour-un-travail-hors-connection">Configuration et installation de Python (pour un travail hors connection)</h2>
+
+<p>Vous n’avez besoin de rien de plus qu’une installation de base de Python 3.6 ou 
+d’une version plus récente.
+Il n’y a aucune dépendance sur un système d’exploitation, un éditeur,
+IDE ou outils supplémentaires liés à Python. Il n’y a pas de tiers
+dépendances.</p>
+
+<p>That said, most of this course involves learning how to write scripts
+and small programs that involve data read from files.  Therefore, you
+need to make sure you’re in an environment where you can easily work
+with files.  This includes using an editor to create Python programs
+and being able to run those programs from the shell/terminal.</p>
+
+<p>You might be inclined to work on this course using a more interactive
+environment such as Jupyter Notebooks. <strong>I DO NOT ADVISE THIS!</strong>
+Although notebooks are great for experimentation, many of the
+exercises in this course teach concepts related to program
+organization.  This includes working with functions, modules, import
+statements, and refactoring of programs whose source code spans
+multiple files.  In my experience, it is hard to replicate this kind
+of working environment in notebooks.</p>
+
+<h2 id="forkingcloning-the-course-repository">Forking/Cloning the Course Repository</h2>
+
+<p>To prepare your environment for the course, I recommend creating your
+own fork of the course GitHub repo at
+<a href="https://github.com/dabeaz-course/practical-python">https://github.com/dabeaz-course/practical-python</a>.
+Once you are done, you can clone it to your local machine:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash % git clone https://github.com/yourname/practical-python
+bash % cd practical-python
+bash %
+</code></pre></div></div>
+
+<p>Do all of your work within the <code class="language-plaintext highlighter-rouge">practical-python/</code> directory.  If you
+commit your solution code back to your fork of the repository, it will
+keep all of your code together in one place and you’ll have a nice
+historical record of your work when you’re done.</p>
+
+<p>If you don’t want to create a personal fork or don’t have a GitHub account,
+you can still clone the course directory to your machine:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash % git clone https://github.com/dabeaz-course/practical-python
+bash % cd practical-python
+bash %
+</code></pre></div></div>
+
+<p>With this option, you just won’t be able to commit code changes except
+to the local copy on your machine.</p>
+
+<h2 id="coursework-layout">Coursework Layout</h2>
+
+<p>Do all of your coding work in the <code class="language-plaintext highlighter-rouge">Work/</code> directory.  Within that
+directory, there is a <code class="language-plaintext highlighter-rouge">Data/</code> directory.  The <code class="language-plaintext highlighter-rouge">Data/</code> directory
+contains a variety of datafiles and other scripts used during the
+course. You will frequently have to access files located in <code class="language-plaintext highlighter-rouge">Data/</code>.
+Course exercises are written with the assumption that you are creating
+programs in the <code class="language-plaintext highlighter-rouge">Work/</code> directory.</p>
+
+<h2 id="course-order">Course Order</h2>
+
+<p>Course material should be completed in section order, starting with
+section 1.  Course exercises in later sections build upon code written in
+earlier sections.  Many of the later exercises involve minor refactoring
+of existing code.</p>
+
+<h2 id="solution-code">Solution Code</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">Solutions/</code> directory contains full solution code to selected
+exercises.  Feel free to look at this if you need a hint.  To get the
+most out of the course however, you should try to create your own
+solutions first.</p>
+
+<p><a href="Contenu.html">Contents</a> | <a href="01_Introduction/00_Overview.html">Next (1 Introduction to Python)</a></p>
+
+:ET

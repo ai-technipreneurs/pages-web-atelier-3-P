@@ -1,0 +1,400 @@
+I"Ġ<h1 id="introduction-au-langage-de-programmation-python">Introduction au langage de programmation Python.</h1>
+
+<p><em>Tous les contenus originaux sont sous licence CC BY-NC-SA 4.0, les ressources extérieures (comme bootstrap) sont sous leur licence respective <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0" /></a>.</em></p>
+
+<p><em>Auteur: @ai-technipreneurs, ai.technipreneurs@gmail.com</em></p>
+
+<p><em>Pour cette formation, des discussions live peuvent se faire sur <a href="https://gitter.im/ai-technipreneurs/programmation-python-pratique?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/ai-technipreneurs/programmation-python-pratique.svg" alt="Gitter" /></a> .</em></p>
+
+<p>Cette formation, à la fois minimaliste et pratique, vous permettra de découvrir rapidement les concepts essentiels de la programmation en <strong>Python</strong>. Il faut dire que ça vaut la peine de s’intéresser à Python, c’est un langage qui sera forcément présent dans l’écosystème informatique des années à venir.</p>
+
+<p><a href="https://github.com/ai-technipreneurs/programmation-python-pratique">Dépôt GitHub</a>.</p>
+
+<p>Le langage de programmation Python est souvent utilisé dans les domaines scientifiques aujourd’hui. C’est un langage de programmation relativement accessible et adapté aux universitaires. Dans ce cahier virtuel d’exercices, nous vous présenterons le langage et apprendrons les basiques liés à l’algorithmique. Ce livre n’attend de vous aucun prérequis de programmation.</p>
+
+<p>Les avantages de Python sont nombreux. D’une part c’est sans doute le langage de script le plus utilisé au monde car on peut quasiment tout faire avec: programmation web, statistiques, machine learning, gestion de bases de données… La communauté de Python est la plus grande dans le monde de la programmation: si vous voulez quelque chose, quelqu’un l’a sûrement déjà fait.</p>
+
+<h2 id="python-x-">Python X ?</h2>
+
+<p>Nous utiserons Python 3 dans notre cours. Les versions précédentes peuvent poser des problèmes.
+Il y’a deux versions de Python, la 2 et la 3. La 2 n’est plus maintenue depuis 2017, il vaut donc mieux se mettre directement à la 3 (on est actuellement à la version 3.10).</p>
+
+<h2 id="python-un-survol-rapide"><a href="http://www.larsen-b.com/static/intro_python/">Python: un survol rapide</a></h2>
+
+<h2 id="cahiers-de-cours-dans-google-colab">Cahiers de cours dans Google Colab</h2>
+
+<p>Chaque chapitre, entièrement contenu dans un <strong>notebook iPython (Jupyter)</strong>, est directement accessible sur la plateforme <strong><a href="https://colab.research.google.com/notebooks/welcome.ipynb">Google Colab</a></strong>. Google Colab est une plateforme cloud entièrement gratuite, donnant un accès direct et facile à un une interface de programmation en Python (via des cahiers/calepins Jupyter) déjà correctement pré-configurée, et disposant de nombreuses librairies pré-installées.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Pour cette formation, vous ne serez pas contraint d’intaller Python directement sur votre oridnateur car avec <strong><a href="https://colab.research.google.com/notebooks/welcome.ipynb">Google Colab</a></strong>, vous pouvez exécuter les lignes de code dans le <em>cloud</em>. Pour ceux qui voudront travailler hors-connection, une installation est cependant nécessaire. Pour installer Python localement, la distribution Anaconda est recommandée, ainsi que l’environnement Jupyter Lab : https://www.anaconda.com/distribution/.</p>
+
+<h3 id="os-x">OS X</h3>
+
+<p>Il existe de nombreuses façons d’installer Python, une des meilleures est d’utiliser le package Anaconda.</p>
+
+<p><strong>Nous vous conseillons d’installer la distribution Anaconda</strong>. Elle contient tous les modules et packages nécessaires pour ce cours. Elle est disponible pour toutes les plateformes et possède une procédure d’installation assez simple. Vous pouvez la télécharger depuis http://continuum.io/downloads.  Des détails pour l’installation peuvent être trouvés ici : http://docs.continuum.io/anaconda/install.html</p>
+
+<h2 id="plan-de-cours">Plan de cours</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+  <li><a href="#syntaxe-g%C3%A9n%C3%A9rale">Vue d’ensemble</a>
+    <ul>
+      <li><a href="#variables-et-assignement">Variables et assignement</a></li>
+      <li><a href="#syntaxe">Syntaxe</a></li>
+      <li><a href="#structures-de-contr%C3%B4le">Structures de contrôle</a>
+        <ul>
+          <li><a href="#if-else"><code class="language-plaintext highlighter-rouge">if... else</code></a></li>
+          <li><a href="#boucle-for-in">Boucle <code class="language-plaintext highlighter-rouge">for... in</code></a>
+            <ul>
+              <li><a href="#la-fonction-range">La fonction <code class="language-plaintext highlighter-rouge">range</code></a></li>
+            </ul>
+          </li>
+          <li><a href="#boucle-while">Boucle <code class="language-plaintext highlighter-rouge">while</code></a></li>
+          <li><a href="#interrompre-les-boucles-break-continue-et-return">Interrompre les boucles: <code class="language-plaintext highlighter-rouge">break</code>, <code class="language-plaintext highlighter-rouge">continue</code> et <code class="language-plaintext highlighter-rouge">return</code></a></li>
+        </ul>
+      </li>
+      <li><a href="#listes">Listes</a>
+        <ul>
+          <li><a href="#compr%C3%A9hensions">Compréhensions</a></li>
+        </ul>
+      </li>
+      <li><a href="#fonctions">Fonctions</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion-2">Conclusion</a></li>
+</ul>
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h1 id="vue-densemble">Vue d’ensemble</h1>
+
+<h2 id="variables-et-assignement">Variables et assignement</h2>
+
+<p>Python est un langage dynamiquement typé, les variables n’ont pas
+besoin d’être déclarées, et leur type peut changer au cours de
+l’exécution.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">python</span><span class="p">:</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s">'int'</span><span class="o">&gt;</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="s">'3'</span>
+<span class="n">python</span><span class="p">:</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s">'str'</span><span class="o">&gt;</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">a</span>
+<span class="s">'3'</span>
+<span class="n">python</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="mi">3</span>
+</code></pre></div></div>
+
+<h2 id="syntaxe">Syntaxe</h2>
+
+<p>L’indentation en Python a une valeur syntaxique : elle sert à délimter
+les blocs. Toutes les lignes d’un même bloc doivent être précédées du
+même nombre d’espaces blancs ; en général on conseille d’utiliser 4
+espaces blancs.</p>
+
+<p>Voici un exemple de bloc conditionnel mettant en évidence cette
+syntaxe.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">'a vaut 0'</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'a est positif'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'il vaut : '</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'a est négatif'</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">'encore des questions sur a?'</span>
+</code></pre></div></div>
+
+<h2 id="structures-de-contrôle">Structures de contrôle</h2>
+
+<p>Source : <a href="https://docs.python.org/3.5/tutorial/controlflow.html">https://docs.python.org/3.5/tutorial/controlflow.html</a></p>
+
+<h3 id="if-else"><code class="language-plaintext highlighter-rouge">if... else</code></h3>
+
+<p>La seule construction conditionnelle existante en Python est
+<code class="language-plaintext highlighter-rouge">if... elif... else...</code>. Toutes les branches sont optionnelles, à
+l’exception du <code class="language-plaintext highlighter-rouge">if</code>, il peut y avoir un nombre quelconque de <code class="language-plaintext highlighter-rouge">elif</code>,
+mais un seul <code class="language-plaintext highlighter-rouge">else</code> à la fin.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'égaux'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span> <span class="o">&lt;=</span> <span class="n">c</span>  <span class="ow">or</span>  <span class="n">c</span> <span class="o">&lt;=</span> <span class="n">b</span> <span class="o">&lt;=</span> <span class="n">a</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">'b au milieu'</span>
+<span class="k">elif</span> <span class="n">b</span> <span class="o">&lt;=</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">c</span>  <span class="ow">or</span>  <span class="n">c</span> <span class="o">&lt;=</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'a au milieu'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'c au milieu'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="boucle-for-in">Boucle <code class="language-plaintext highlighter-rouge">for... in</code></h3>
+
+<p>Fondamentalement, il existe deux types de boucles en Python. La plus courante
+est la <code class="language-plaintext highlighter-rouge">for... in</code> qui permet de parcourir les éléments d’un itérable.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="la-fonction-range">La fonction <code class="language-plaintext highlighter-rouge">range</code></h4>
+
+<p>La boucle <code class="language-plaintext highlighter-rouge">for</code> est souvent utilisée en conjonction avec la fonction
+<code class="language-plaintext highlighter-rouge">range</code>, dont la syntaxe générale est :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Ainsi appelée, la fonction génère la liste des entiers entre <code class="language-plaintext highlighter-rouge">start</code>
+(inclus) et <code class="language-plaintext highlighter-rouge">end</code> (non inclus) avec pas de <code class="language-plaintext highlighter-rouge">step</code> :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Les deux autres syntaxes admissibles sont <code class="language-plaintext highlighter-rouge">range(start, end)</code> (pas
+égal à 1) et <code class="language-plaintext highlighter-rouge">range(end)</code> (début égal à 0).</p>
+
+<p><strong>Note :</strong> À partir de Python 3.x, <code class="language-plaintext highlighter-rouge">range</code> ne renvoie plus une liste,
+ mais un <em>générateur</em>. La différence réside exclusivement dans
+ l’utilisation de la mémoire, beaucoup plus efficace avec la 3.x. Le
+ même comportement est réalisé par la fonction <code class="language-plaintext highlighter-rouge">xrange</code> en Python 2.x.</p>
+
+<h3 id="boucle-while">Boucle <code class="language-plaintext highlighter-rouge">while</code></h3>
+
+<p>La deuxième boucle est la <code class="language-plaintext highlighter-rouge">while</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Pas étonnant qu’il soit alors beaucoup plus facile d’écrire une boucle
+infinie :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'boucle toujours'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="interrompre-les-boucles-break-continue-et-return">Interrompre les boucles: <code class="language-plaintext highlighter-rouge">break</code>, <code class="language-plaintext highlighter-rouge">continue</code> et <code class="language-plaintext highlighter-rouge">return</code></h3>
+
+<p>L’instruction <code class="language-plaintext highlighter-rouge">break</code> sort de la boucle sans vérifier la
+condition :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">break</span>
+</code></pre></div></div>
+
+<p>L’instruction <code class="language-plaintext highlighter-rouge">continue</code> passe à l’itération suivante en sautant le
+reste du corps :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Et le <code class="language-plaintext highlighter-rouge">return</code> sort immédiatement de toute boucle et de la fonction
+qui le contient.</p>
+
+<h2 id="listes">Listes</h2>
+
+<p>Source : <a href="https://docs.python.org/3/tutorial/datastructures.html">https://docs.python.org/3/tutorial/datastructures.html</a></p>
+
+<p>L’un des objets les plus utilisés en Python, ce sont les listes. On
+déclare une liste avec les crochets <code class="language-plaintext highlighter-rouge">[]</code>, et on accède à ses éléments
+comme on accède aux éléments d’un tableau en C :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="s">'nom'</span><span class="p">,</span><span class="s">'prenom'</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="bp">True</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span>
+<span class="p">[</span><span class="s">'nom'</span><span class="p">,</span><span class="s">'prenom'</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="bp">True</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="s">'nom'</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="bp">True</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</code></pre></div></div>
+
+<p>Les indices négatifs accèdent aux éléments à partir du
+dernier :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="bp">True</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span>
+<span class="s">'prenom'</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</code></pre></div></div>
+
+<p>Il est aussi possible d’obtenir les sous-listes d’une liste. On parle de
+<code class="language-plaintext highlighter-rouge">slicing</code>. L’expression <code class="language-plaintext highlighter-rouge">l[start:end:step]</code> donne la sous-liste de <code class="language-plaintext highlighter-rouge">l</code>
+qui démarre à l’élément <code class="language-plaintext highlighter-rouge">start</code> (inclus), se termine à l’élément <code class="language-plaintext highlighter-rouge">end</code>
+(exclus) et saute tous les <code class="language-plaintext highlighter-rouge">step</code> éléments.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="n">l</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[::]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[:]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+</code></pre></div></div>
+
+<p>La syntaxe <code class="language-plaintext highlighter-rouge">[:]</code> est un raccourci courant pour <em>copier</em> une liste :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[:]</span> <span class="o">==</span> <span class="n">l</span>
+<span class="bp">True</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">l</span><span class="p">[:]</span> <span class="ow">is</span> <span class="n">l</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<h3 id="compréhensions">Compréhensions</h3>
+
+<p>Python offre une syntaxe pour la création des listes qui devrait être
+familière aux mathématiciens. C’est l’écriture en <code class="language-plaintext highlighter-rouge">compréhension</code> bien connue
+dans la théorie des ensembles. Elle permet entre autre, de réduire l’écriture
+de loupes. C’est un héritage du langage Lisp appelé
+<em>compréhensions de listes</em> :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="p">[</span><span class="n">a</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+<span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mf">9.5</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>ce qui est sémantiquement équivalent à</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">l</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>On peut ajouter un nombre arbitraire de <code class="language-plaintext highlighter-rouge">for</code> et de <code class="language-plaintext highlighter-rouge">if</code> (sans <code class="language-plaintext highlighter-rouge">else</code>)/ opérations
+logiques dans une compréhension, ils seront déroulés dans l’ordre :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>(les retours à la ligne sont optionnels) est équivalent à</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">l</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="fonctions">Fonctions</h2>
+
+<p>Source : <a href="https://docs.python.org/3/tutorial/controlflow.html">https://docs.python.org/3/tutorial/controlflow.html</a></p>
+
+<p>Les fonctions Python sont définies par le mot clef <code class="language-plaintext highlighter-rouge">def</code>. Elles
+peuvent prendre un nombre arbitraire de paramètres, et renvoyent une
+valeur à l’aide du mot clef <code class="language-plaintext highlighter-rouge">return</code>. Toute fonction renvoye une
+valeur, les fonctions qui n’ont pas de <code class="language-plaintext highlighter-rouge">return</code> renvoient la valeur
+spéciale <code class="language-plaintext highlighter-rouge">None</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">y</span>
+</code></pre></div></div>
+
+<p>Certains paramètres peuvent prendre des valeurs par défaut. Si un
+paramètre prend une valeur par défaut, tous ceux qui le suivent
+doivent aussi en prendre.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<span class="p">.......</span>    <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span>
+
+<span class="n">python</span><span class="p">:</span> <span class="n">test</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">test</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">test</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">test</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nb">TypeError</span><span class="p">:</span> <span class="n">test</span><span class="p">()</span> <span class="n">takes</span> <span class="n">at</span> <span class="n">least</span> <span class="mi">2</span> <span class="n">arguments</span> <span class="p">(</span><span class="mi">1</span> <span class="n">given</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Les paramètres d’une fonction peuvent être assignés hors ordre avec la
+notation <code class="language-plaintext highlighter-rouge">paramètre=valeur</code> :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="n">test</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">test</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Python fournit deux opérateurs unaires pour transformer des objets en
+paramètres d’une fonction. L’opérateur <code class="language-plaintext highlighter-rouge">*</code> transforme une liste ou un
+tuple, tandis que l’opérateur <code class="language-plaintext highlighter-rouge">**</code> transforme un dictionnaire :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="p">:</span> <span class="n">l</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">test</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">d</span> <span class="o">=</span> <span class="p">{</span> <span class="s">'a'</span> <span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">'b'</span> <span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">'d'</span> <span class="p">:</span> <span class="mi">1</span> <span class="p">}</span>
+<span class="n">python</span><span class="p">:</span> <span class="n">test</span><span class="p">(</span><span class="o">**</span><span class="n">d</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="chapitres-dans-google-colab">Chapitres dans Google Colab</h2>
+
+<h2 id="questions-et-réponses">Questions et Réponses</h2>
+
+<h3 id="q-y-a-t-il-des-vidéos-de-cours-que-je-peux-regarder">Q: Y a-t-il des vidéos de cours que je peux regarder?</h3>
+
+<p>Non, pas pour le moment. Ce cours consiste à écrire du code Python et non à regarder quelqu’un d’autre.</p>
+
+<h3 id="q-puis-je-utiliser-ce-matériel-pour-enseigner-mon-propre-cours-python">Q: Puis-je utiliser ce matériel pour enseigner mon propre cours Python?</h3>
+
+<p>Oui, à condition qu’une attribution appropriée soit donnée.</p>
+
+<h3 id="q-puis-je-créer-des-œuvres-dérivées">Q: Puis-je créer des œuvres dérivées?</h3>
+
+<p>Oui, tant que ces œuvres portent les mêmes termes de licence et fournissent une attribution.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>AU terme de cette formation, vous aurez certainement les bases pour bien attaquer le projet.</p>
+
+<p>En espérant que Python vous plaise.</p>
+
+<h2 id="contributeurs">Contributeurs</h2>
+
+<ul>
+  <li>Yaé Ulrich Gaba</li>
+  <li>Koffi Agbavon Messan</li>
+  <li>Awadi Abalo Katanga</li>
+  <li>Bernardin Ligan</li>
+  <li>Conité Gbodogbé</li>
+</ul>
+
+<h2 id="assez-parlé-">Assez parlé !</h2>
+
+<p>Ok, ok. Dirigez votre navigateur 👉 <a href="Notes/Contenu.html">ICI</a>!</p>
+
+:ET

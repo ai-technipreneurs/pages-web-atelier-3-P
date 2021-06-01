@@ -1,0 +1,49 @@
+I"w<h1 id="configuration-du-cours">Configuration du cours</h1>
+
+<p>Bienvenue dans la programmation Python pratique! Cette page contient des informations importantes
+à propos de la configuration des cours et de la logistique.
+Cette page vous donne l’essentiel afin de vous familiariser avec <a href="https://research.google.com/colaboratory/faq.html?hl=fr">Colaboratory</a>. Elle peut être omise en première lecture.</p>
+
+<h2 id="durée-du-cours-et-exigences-en-matière-de-temps">Durée du cours et exigences en matière de temps</h2>
+
+<p>Ce cours était à l’origine donné en personne avec un instructeur
+formation qui a duré 3 à 4 jours. Pour terminer le cours dans son
+dans son intégralité, vous devez prévoir au minimum 25 à 35 heures de travail.
+La plupart des participants trouvent le matériel assez difficile sans
+jetant un œil au code de la solution (voir ci-dessous).</p>
+
+<h2 id="configuration-et-installation-de-python-pour-un-travail-hors-connection">Configuration et installation de Python (pour un travail hors connection)</h2>
+
+<p>Vous n’avez besoin de rien de plus qu’une installation de base de Python 3.6 ou 
+d’une version plus récente.
+Il n’y a aucune dépendance sur un système d’exploitation, un éditeur,
+IDE ou outils supplémentaires liés à Python. Il n’y a pas de tiers
+dépendances.</p>
+
+<h2 id="bifurquer--cloner-le-référentiel-de-cours">Bifurquer / cloner le référentiel de cours</h2>
+
+<p>Pour préparer votre environnement pour le cours, pour un travail hors connection, je vous recommande de créer votre
+propre fork du cours repo GitHub à
+<a href="https://github.com/ai-technipreneurs/programmation-python-pratique">https://github.com/ai-technipreneurs/programmation-python-pratique</a>.
+Une fois que vous avez terminé, vous pouvez le cloner sur votre machine locale:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash % git clone https://github.com/yourname/practical-python
+bash % cd programmation-python-pratique
+bash %
+</code></pre></div></div>
+
+<p>Faites tout votre travail dans le répertoire <code class="language-plaintext highlighter-rouge">programmation-python-pratique /</code>. Si vous
+remettez le code de votre solution dans votre fourchette du référentiel, il
+garde tout votre code ensemble au même endroit et vous aurez un bel
+enregistrement historique de votre travail lorsque vous avez terminé.</p>
+
+<h2 id="ordre-des-cours">Ordre des cours</h2>
+
+<p>Le matériel de cours doit être complété dans l’ordre des sections, en commençant par
+section 1. Les exercices de cours dans les sections ultérieures s’appuient sur du code écrit en
+sections précédentes. De nombreux exercices ultérieurs impliquent une refactorisation mineure
+du code existant.</p>
+
+<p><a href="Contenu.html">Contents</a> | <a href="01_Introduction/00_Overview.html">Next (1 Introduction to Python)</a></p>
+
+:ET
