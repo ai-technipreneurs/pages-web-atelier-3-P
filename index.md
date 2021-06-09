@@ -2,7 +2,7 @@
 layout: default
 ---
 
-#  Bienvenu sur le site de l'atelier 3P.
+#  Bienvenu(e) sur les cahiers de l'atelier 3P.
 
 Calepins d'auto-apprentissage en [**Python**](https://www.python.org/). Nous organisons cet atelier une fois par trimestre une telle formation, avec des mises à jour régulières. [Prochaine session, 👉 05-07/Juillet 2021](Notes/Contenu.html)!
 Ces formations peuvent également avoir lieu, à la demande.
