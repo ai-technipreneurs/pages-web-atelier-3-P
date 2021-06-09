@@ -5,24 +5,6 @@ title: Variables, Types et Opérations
 
 
 
-[Contenu](../Contents.md) \| [Précédent (1.1. Python en bref)](1_Python-en-bref.md) 
-
-
-<a href="https://colab.research.google.com/github/ai-technipreneurs/programmation-python-pratique/blob/master/2_Variables_Types_Op%C3%A9rations.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-****
-
-# <center> <b> <span style="color:orange;"> Atelier 3P </span> </b></center>
-
-## <center> <b> <span style="color:green;">Programmation Python Pratique</span> </b></center>
-
-<center>
-    <a href="https://github.com/ai-technipreneurs" ><img src="https://avatars.githubusercontent.com/u/83169416?v=4" style="float:center; max-width: 650px; display: inline" alt="IMSP"/> </a>
-    </center>
-
-### <center> <b> <span style="color:blue;">Jour 01: Introduction à Python  </span> </b></center>
-
-#### <left> <b> <span style="color:brown;">Instructeur : </span> </b></left>[ai-technipreneurs](https://github.com/ai-technipreneurs)
 
 ****
 
@@ -907,6 +889,6 @@ Pour accéder à la liste complète des opérateurs standards de python et leurs
 d’utilisations des opérateurs standards.
 
 
-[Contenu](../Contents.md) \| [Précédent (1.1 Python en bref)](1_Python-en-bref.md) 
+[Contenu](../Contenu.md) \| [Précédent (1.1. Python en bref)](1_Python-en-bref.md) 
 
 

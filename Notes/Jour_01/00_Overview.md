@@ -3,7 +3,7 @@ layout: default
 title: Overview
 ---
 
-[Contenu](../Contenu.html) \| [Next ( 2. Travailler avec des données)](../Jour_02/00_Overview.html)
+[Contenu](../Contenu.html) \| [Suivant ( 2. Travailler avec des données)](../Jour_02/00_Overview.html)
 
 ## 1. Introduction à Python
 
@@ -16,4 +16,4 @@ et déboguer les petits programmes. Nous dirons quelques sur [Colaboratory](http
 * [1.2 Variables, Types et Opérations](2_Variables-Types-Opérations.html)
 
 
-[Contenu](../Contenu.html) \| [Next (2. Travailler avec des données)](../Jour_02/00_Overview.html)
+[Contenu](../Contenu.html) \| [Suivant (2. Travailler avec des données)](../Jour_02/00_Overview.html)

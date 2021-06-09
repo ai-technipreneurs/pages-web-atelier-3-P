@@ -4,24 +4,7 @@ title: Objets itérables ou conteneurs
 ---
 
 
-[Contenu](../Contenu.html) \| [Précédent (2.1 Chaînes de caractères)](../Jours_02/3_Chaînes-de-caractères.html)
 
-
-<a href="https://colab.research.google.com/github/ai-technipreneurs/programmation-python-pratique/blob/master/4_Objets-it%C3%A9rables-ou-conteneurs.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-****
-
-# <center> <b> <span style="color:orange;"> Atelier 3P </span> </b></center>
-
-## <center> <b> <span style="color:green;">Programmation Python Pratique</span> </b></center>
-
-<center>
-    <a href="https://github.com/ai-technipreneurs" ><img src="https://avatars.githubusercontent.com/u/83169416?v=4" style="float:center; max-width: 650px; display: inline" alt="IMSP"/> </a>
-    </center>
-
-### <center> <b> <span style="color:blue;"> Objets itérables ou conteneurs</span> </b></center>
-
-#### <left> <b> <span style="color:brown;">Instructeur : </span> </b></left>[ai-technipreneurs](https://github.com/ai-technipreneurs)
 
 ****
 
@@ -517,5 +500,5 @@ print(x)
 
 ```
 
-[Contenu](../Contenu.html) \| [Précédent (2.2 Objets itérables ou conteneurs)](../Jours_02/3_Chaînes-de-caractères.html)
+[Contenu](../Contenu.html) \| [Précédent (2.2. Objets itérables ou conteneurs)](../Jours_02/3_Chaînes-de-caractères.html)
 

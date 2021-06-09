@@ -5,25 +5,6 @@ title: Les Boucles
 
 
 
-[Contenu](../Contenu.html) \| [Suivant (3.1. Fonctions et Modules)](../Jours_03/6_Fonctions-et-Modules.html)
-
-
-
-<a href="https://colab.research.google.com/github/ai-technipreneurs/programmation-python-pratique/blob/master/5_Les-boucles.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-****
-
-# <center> <b> <span style="color:orange;"> Atelier 3P </span> </b></center>
-
-## <center> <b> <span style="color:green;">Programmation Python Pratique</span> </b></center>
-
-<center>
-    <a href="https://github.com/ai-technipreneurs" ><img src="https://avatars.githubusercontent.com/u/83169416?v=4" style="float:center; max-width: 650px; display: inline" alt="IMSP"/> </a>
-    </center>
-
-### <center> <b> <span style="color:blue;">Boucles  </span> </b></center>
-
-#### <left> <b> <span style="color:brown;">Instructeur : </span> </b></left>[ai-technipreneurs](https://github.com/ai-technipreneurs)
 
 ****
 
