@@ -1,0 +1,20 @@
+I"<p><a href="../Contenu.html">Contenu</a> | <a href="../Jour_02/00_Overview.html">Next (2. Jour_02: Travailler avec des données)</a></p>
+
+<h2 id="1-introduction-à-python">1. Introduction à Python</h2>
+
+<p>Le but de cette première section est d’introduire quelques bases de Python à partir de
+du niveau zéro. En commençant par rien, vous apprendrez à modifier, exécuter,
+et déboguer les petits programmes. En fin de compte, vous allez écrire un court script qui
+lit un fichier de données CSV et effectue un calcul simple.</p>
+
+<ul>
+  <li><a href="01_Python.html">1.1 Introducing à Python</a></li>
+  <li><a href="02_Hello_world.html">1.2 Un premier programme</a></li>
+  <li><a href="03_Numbers.html">1.3 Nombres</a></li>
+  <li><a href="04_Strings.html">1.4 Chaîne de caractères</a></li>
+  <li><a href="05_Lists.html">1.5 Listes</a></li>
+  <li><a href="06_Functions.html">1.0 Functions</a></li>
+</ul>
+
+<p><a href="../Contenu.html">Contenu</a> | <a href="../Jour_02/00_Overview.html">Next (2. Jour_02: Travailler avec des données)</a></p>
+:ET
