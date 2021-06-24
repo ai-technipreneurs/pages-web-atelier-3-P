@@ -11,7 +11,7 @@
 
 
 
-Cette formation, à la fois minimaliste et pratique, vous permettra de découvrir rapidement les concepts essentiels de la programmation en **Python**. Il faut dire que ça vaut la peine de s'intéresser à Python, c'est un langage qui sera forcément présent dans l'écosystème informatique des années à venir.
+Cette formation qui est à la fois minimaliste et pratique, vous permettra de découvrir rapidement les concepts essentiels de la programmation en **Python**. Il faut dire que ça vaut la peine de s'intéresser à Python, c'est un langage qui sera forcément présent dans l'écosystème informatique des années à venir.
 
 
 [Dépôt GitHub](https://github.com/ai-technipreneurs/programmation-python-pratique).
@@ -21,7 +21,7 @@ Le langage de programmation Python est souvent utilisé dans les domaines scient
 Les avantages de Python sont nombreux. D'une part c'est sans doute le langage de script le plus utilisé au monde car on peut quasiment tout faire avec: programmation web, statistiques, machine learning, gestion de bases de données... La communauté de Python est la plus grande dans le monde de la programmation: si vous voulez quelque chose, quelqu'un l'a sûrement déjà fait.
 
 
-[Session du 05-07/Juillet 2021](https://ai-technipreneurs.github.io/pages-web-atelier-3-P/Notes/Contenu.html)!
+[Session du 12-14/Juillet 2021](https://ai-technipreneurs.github.io/pages-web-atelier-3-P/Notes/Contenu.html)!
 
 
 
